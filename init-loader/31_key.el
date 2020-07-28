@@ -2,10 +2,6 @@
 ;;; Code:
 ;;; Commentary:
 
-(global-set-key (kbd "M-o") 'helm-swoop)
-(global-set-key (kbd "C-f") 'moccur-grep-find)
-(global-set-key [f8] 'helm-imenu)
-
 (global-set-key (kbd "C-w") 'kill-ring-save)
 (global-set-key (kbd "M-w") 'kill-region)
 (global-set-key (kbd "C-v") 'yank)
@@ -30,12 +26,6 @@
 (global-set-key (kbd "M-SPC") 'bm-toggle)
 (global-set-key (kbd "M-;") 'bm-previous)
 (global-set-key (kbd "M-:") 'bm-next)
-
-(global-set-key (kbd "M-SPC") 'bm-toggle)
-(global-set-key (kbd "M-[") 'bm-previous)
-(global-set-key (kbd "M-]") 'bm-next)
-
-
 
 (global-set-key (kbd "C-t") 'match-paren)
 
