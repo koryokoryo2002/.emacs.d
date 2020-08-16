@@ -3,6 +3,7 @@ auto-save-list/
 straight/
 snippets/
 transient/
+elpy/
 ido.last
 stdafx.hpp
 stdafx.pch
