@@ -9,7 +9,6 @@
 (global-set-key (kbd "C-z") 'other-window)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-(global-set-key (kbd "M-g") 'goto-line)
 (global-set-key (kbd "M-r") 'replace-string)
 (global-set-key (kbd "M-s") 'shell)
 
