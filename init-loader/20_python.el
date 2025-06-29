@@ -7,10 +7,16 @@
 
 (use-package python-mode
   :init
-;  (add-hook 'python-mode-hook #'eglot-ensure)
+  (electric-pair-mode 1)  
   :mode
   ("¥¥.py¥¥" . python-mode)
-  )
+  :hook
+  (python-mode-hook .
+          (lambda ()
+            (define-key python-mode-map "\"" 'electric-pair)
+            (define-key python-mode-map "(" 'electric-pair)
+            (define-key python-mode-map "[" 'electric-pair)
+            (define-key python-mode-map "{" 'electric-pair)))
 
 (use-package lsp-pyright
   :ensure t
