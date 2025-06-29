@@ -7,11 +7,17 @@
 
 (use-package python-mode
   :init
-  (add-hook 'python-mode-hook #'eglot-ensure)
+;  (add-hook 'python-mode-hook #'eglot-ensure)
   :mode
   ("¥¥.py¥¥" . python-mode)
   )
 
+(use-package lsp-pyright
+  :ensure t
+  :custom (lsp-pyright-langserver-command "pyright") ;; or basedpyright
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))))  ; or lsp-deferred
 ;; (use-package elpy
 ;;   :init
 ;;   (advice-add 'python-mode :before 'elpy-enable)
