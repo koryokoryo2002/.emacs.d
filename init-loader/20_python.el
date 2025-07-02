@@ -17,6 +17,7 @@
             (define-key python-mode-map "(" 'electric-pair)
             (define-key python-mode-map "[" 'electric-pair)
             (define-key python-mode-map "{" 'electric-pair)))
+  )
 
 (use-package lsp-pyright
   :ensure t
@@ -31,9 +32,11 @@
 ;;   (pyvenv-activate "~/work/python/venv3")
 ;;   )
 
-;; (use-package ein
-;;   :ensure t
-;;   :commands (ein:notebooklist-open))
+(use-package ein
+  :ensure t
+  :commands (ein:notebooklist-open)
+  )
+
 
 (provide '20_python)
 ;;; 20_python.el ends here
