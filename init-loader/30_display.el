@@ -7,7 +7,7 @@
        '((top . 2)    ; フレームの Y 位置(ピクセル数)
 		 (left . 50)    ; フレームの X 位置(ピクセル数)
 		 (width . 106)    ; フレーム幅(文字数)
-		 (height . 40)   ; フレーム高(文字数)
+		 (height . 70)   ; フレーム高(文字数)
 		 ) initial-frame-alist))
 
 (tool-bar-mode 0)
@@ -37,18 +37,6 @@
 (setq hl-line-face 'hlline-face)
 (global-hl-line-mode)
 
-(set-default-font "MeiryoKe_Console 10")
-(set-fontset-font (frame-parameter nil 'font)
-                  'japanese-jisx0208
-                  '("MeiryoKe_Console" . "unicode-bmp")
-;                  '("Ricty Diminished" . "unicode-bmp")
-                  )
-
-(set-fontset-font (frame-parameter nil 'font)
-                  'katakana-jisx0201
-                  '("MeiryoKe_Console" . "unicode-bmp")
-;                  '("Ricty Diminished" . "unicode-bmp")
-                  )
 
 (provide '30_display)
 ;;; 30_display.el ends here

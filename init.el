@@ -30,6 +30,7 @@
 ;; 本来は (use-package hoge :straight t) のように書く必要がある
 (setq straight-use-package-by-default t)
 
+
 ;; init-loaderをインストール&読み込み
 (use-package init-loader)
 (setq init-loader-show-log-after-init nil)
@@ -44,15 +45,22 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
  '(custom-safe-themes
-   (quote
-	("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "86f4407f65d848ccdbbbf7384de75ba320d26ccecd719d50239f2c36bec18628" default)))
+   '("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26"
+	 "86f4407f65d848ccdbbbf7384de75ba320d26ccecd719d50239f2c36bec18628"
+	 default))
+ '(display-time-mode t)
  '(package-selected-packages
-   (quote
-	(use-package smartparens powerline moccur-edit mhc mew magit leuven-theme json-mode js2-mode init-loader imenu-list ido-vertical-mode helm-migemo helm-gtags haskell-mode gtags flycheck exec-path-from-shell color-theme-solarized browse-kill-ring bm auto-complete ace-isearch))))
+   '(use-package smartparens powerline moccur-edit mhc mew magit
+	  leuven-theme json-mode js2-mode init-loader imenu-list
+	  ido-vertical-mode helm-migemo helm-gtags haskell-mode gtags
+	  flycheck exec-path-from-shell color-theme-solarized
+	  browse-kill-ring bm auto-complete ace-isearch))
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "MeiryoKe_Console" :foundry "outline" :slant normal :weight regular :height 110 :width normal)))))

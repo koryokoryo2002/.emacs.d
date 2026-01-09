@@ -31,12 +31,24 @@
 ;;   :config
 ;;   (pyvenv-activate "~/work/python/venv3")
 ;;   )
+;; pip install ipython
+;; pip install tornado
 
 (use-package ein
   :ensure t
   :commands (ein:notebooklist-open)
   )
 
+(use-package ein-notebook
+  :ensure t
+	)
+(use-package ein-subpackages
+  :ensure t
+  )
+
+(use-package smartrep
+  :ensure t
+  )
 
 (provide '20_python)
 ;;; 20_python.el ends here

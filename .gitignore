@@ -4,6 +4,8 @@ straight/
 snippets/
 transient/
 elpy/
+elpa/
+request/
 ido.last
 stdafx.hpp
 stdafx.pch
